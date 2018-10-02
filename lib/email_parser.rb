@@ -11,9 +11,9 @@ class EmailParser
   end
 
   def parse
-    email_array = self.new
-    email_array = @emails.split(",")
-    email_array = email_array.reject { |e| e.split(",")}
+    # email_array = self.new
+    # email_array = @emails.split(",")
+  email_array.reject { |e| e.split(",")}
     email_array.uniq
 
 
