@@ -14,7 +14,7 @@ class EmailParser
     #  email_array = EmailParser.new
     # email_array = @emails.split(",")
   l =@emails.split.collect { |email| email.split(",")}
-    l.join.uniq
+    l.flatten.uniq
 
     # emails.split.collect do |email|
     #   email.split(",")
