@@ -12,9 +12,9 @@ class EmailParser
 
   def parse
     #  email_array = EmailParser.new
-    # email_array = @emails.split(",")
-  l =@emails.split.collect { |email| email.split(",")}
-    l.flatten.uniq
+    email_array = @emails.split(",").flatten.uniq
+  # email_array =@emails.split.collect { |email| email.split(",")}
+  #   email_array.flatten.uniq
 
     # emails.split.collect do |email|
     #   email.split(",")
