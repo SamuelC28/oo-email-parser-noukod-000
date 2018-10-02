@@ -6,12 +6,12 @@ class EmailParser
 
   attr_accessor :emails
 
-  def initialize
+  def initialize(emails)
     @emails = emails
   end
 
   def parse
-    email_array = EmailParser.new
+    email_array = self.new
     email_array = @emails.split(",")
     email_array = email_array.reject { |e| e == ""}
     email_array.uniq
