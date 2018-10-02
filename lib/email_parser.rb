@@ -16,7 +16,7 @@ class EmailParser
     email_array = email_array.reject { |e| e.split(",")}
     email_array.uniq
 
-    
+
 
 end
-end 
+end
